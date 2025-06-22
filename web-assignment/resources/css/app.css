@@ -1,0 +1,200 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.top-container {
+    background: #000;
+    color: #fff;
+    transition: 0.3s ease;
+}
+
+.nav-items {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.nav-items li {
+    text-decoration: none;
+    color: #c8c8c8;
+}
+
+.nav-items li a {
+    text-decoration: none;
+     color: #c8c8c8;
+}
+
+
+li {
+    list-style-type: none;
+}
+
+a:hover {
+    color: #ededed;
+}
+
+.logout-btn {
+    transition: 0.3s ease;
+}
+
+.logout-btn:hover {
+    color: #ededed;
+}
+
+.item-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 600px;
+    width: 100%;
+}
+
+.login-main {
+    width: 35%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin: 0px auto;
+    padding: 35px 40px 40px 40px;
+}
+
+.login-header {
+    font-size: 30px;
+    margin-bottom: 10px
+}
+
+.login-label {
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.login-input {
+    font-size: 16px;
+    padding: 5px;
+    border-radius: 2px;
+}
+
+.login-input:focus {
+    outline: none;
+}
+
+.login-item {
+    display: grid;
+    margin-bottom: 10px;
+}
+
+.login-btn {
+    background-color: #000;
+    color: #fff;
+    width: 100%;
+    padding: 7px;
+    transition: 0.3s ease;
+}
+
+.login-btn:hover {
+    background-color: #cdcdcd;
+    color: #000;
+}
+
+
+.login-item-two {
+    margin-top: 20px;
+}
+
+.error-message {
+    text-align: center;
+    padding: 10px;
+    color: red;
+}
+
+.table-content {
+    margin-top: 20px;
+}
+
+table, th, td {
+    border: 1px solid #c8c8c8;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 5px;
+    text-align: left;
+}
+
+.categories-container {
+    width: 300px;
+    margin-left: 35px;
+}
+
+.main-container {
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.products-container {
+    width: 900px;
+}
+
+.create-container {
+    background-color: #f1f1f1;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 24px;
+}
+
+.create-main-container {
+    width: 800px;
+}
+
+.my-6 {
+    margin: 0px;
+}
+
+.create-form input {
+    width: 100%;
+    border-radius: 2px;
+}
+
+
+.create-form input:focus {
+    outline: none;
+}
+
+.create-form label {
+    margin-bottom: 8px;
+}
+
+.create-form select {
+    width: 100%;
+    border-radius: 2px;
+    height: 35px;
+}
+
+
+.submit-btn {
+    width: 100%;
+    padding: 5px;
+    margin-top: 20px;
+    transition: 0.3s ease;
+}
+
+.submit-btn2 {
+    margin-top: 25px;
+}
+
+.submit-btn:hover {
+    background-color: #cdcdcd;
+    color: #000;
+}
+
+.categories-heading {
+    margin-bottom: 15px;
+}
+
+
+.add-form input {
+    margin-bottom: 10px;
+}
+
+.image-in-center {
+    width: 100px;
+    height: 100px;
+}

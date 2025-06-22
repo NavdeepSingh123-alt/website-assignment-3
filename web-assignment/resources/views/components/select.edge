@@ -1,0 +1,15 @@
+<div class="my-6">
+  @if(title)
+    <label for="{{ name }}" class="block mb-1">{{ title }}</label>
+  @endif
+
+  <select name="{{ name }}" id="{{ name }}" class="border border-gray-300 px-2 py-1 w-full">
+    @each(option in options)
+      <option value="{{ option.id }}">{{ option.name }}</option>
+    @end
+  </select>
+
+  @inputError(name)
+    <span class="text-red-500 text-sm">{{ $messages }}</span>
+  @end
+</div>

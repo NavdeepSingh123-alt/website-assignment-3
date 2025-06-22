@@ -1,0 +1,16 @@
+<div class="my-6">
+  @if(title)
+    <label for="{{ name }}" class="block">{{ title }}</label>
+  @endif
+
+  <input
+    type="{{ type || 'text' }}"
+    id="{{ name }}"
+    name="{{ name }}"
+    class="border border-gray-300 px-2 py-1"
+  >
+
+  @inputError(name)
+    {{ $messages }}
+  @end
+</div>

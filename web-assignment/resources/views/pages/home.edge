@@ -1,0 +1,49 @@
+@layouts.main()
+<main>
+  <div class="container mx-auto flex main-container">
+
+    <div class="products-container">
+      <aside class="h-full">
+        <h3 class="text-3xl">Products</h3>
+
+        <table class="table-content" style="width:100%">
+          <tr>
+            <th>Name</th>
+            <th>Price</th>
+            <th>Image URL</th>
+            <th>Category</th>
+          </tr>
+          @each(expense in expenses)
+          <tr>
+            <td>{{ expense.title }}</td>
+            <td>{{ expense.amount }}</td>
+            <td>{{ expense.transactionDate }}</td>
+            <td>{{ expense.category.name }}</td>
+          </tr>
+          @end
+        </table>
+
+      </aside>
+    </div>
+
+  
+    <div class="categories-container">
+      <aside class="h-full">
+        <h3 class="text-3xl">Categories</h3>
+
+        <table class="table-content" style="width:100%">
+          <tr>
+            <th>Category name</th>
+          </tr>
+          @each(category in categories)
+          <tr>
+            <td>{{ category.name }}</td>
+          </tr>
+          @end
+        </table>
+
+      </aside>
+    </div>
+  </div>
+</main>
+@end
